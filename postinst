@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ldconfig
+getent group nginx || groupadd --system nginx
+getent shadow nginx || useradd  --system -d /var/cache/nginx --shell=/sbin/nologin -g nginx nginx
+mkdir -p /var/cache/nginx && chown -R nginx:nginx /var/cache/nginx

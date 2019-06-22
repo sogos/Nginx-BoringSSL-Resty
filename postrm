@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+systemctl stop nginx
+
+echo "Removing user nginx.."
+getent shadow nginx
+if [[ $? -eq 0 ]]; then
+    userdel nginx
+fi

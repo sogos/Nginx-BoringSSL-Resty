@@ -1,0 +1,10 @@
+Package: nginx
+Version: 1.17.0-lua-boringssl
+Section: base
+Priority: optional
+Architecture: amd64
+Maintainer: Thibault <thibault@display.aero>
+Description: Nginx compiled with LUA and BoringSSL
+Build-Depends: debhelper (>=9.0.0),
+               dh-systemd (>= 1.5)
+

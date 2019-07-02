@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-ENV NGINX_VERSION=1.17.0
+ENV NGINX_VERSION=1.17.1
 ENV LUAROCKS_VERSION=2.4.4
 
 RUN apt-get update && apt-get -y install \
